@@ -122,3 +122,23 @@ My website worked over HTTP, but the browser indicated that the connection was n
 
 ![AWS EC2 instance running in the London region](aws-ec2.png)
 
+## What I Learned
+
+Through this project, I gained hands-on experience with:
+
+- Launching and configuring an AWS EC2 instance.
+- Understanding how VPCs, subnets and security groups work.
+- Installing and managing NGINX on Ubuntu.
+- Connecting a personal domain to a server using a DNS A record.
+- Understanding the difference between HTTP and HTTPS.
+- Troubleshooting SSH connectivity and Linux service errors.
+- Updating DNS when an EC2 public IP address changes.
+
+## Project Outcome
+
+I successfully deployed an NGINX web server on AWS EC2 and made it accessible through my personal domain, subeyda.co.uk.
+
+The project helped me understand how cloud infrastructure, networking and web servers work together.
+
+**Note:** This was a temporary learning environment. The website is not intended to remain online permanently.
+
