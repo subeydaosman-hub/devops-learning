@@ -114,3 +114,7 @@ My website worked over HTTP, but the browser indicated that the connection was n
 
 ![NGINX welcome page showing my domain](nginx-welcome.png)
 
+### Cloudflare DNS Configuration
+
+![Cloudflare DNS A record pointing to my EC2 instance](../cloudflare-dns.png)
+
