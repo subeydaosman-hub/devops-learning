@@ -118,3 +118,7 @@ My website worked over HTTP, but the browser indicated that the connection was n
 
 ![Cloudflare DNS A record pointing to my EC2 instance](../cloudflare-dns.png)
 
+### AWS EC2 Instance
+
+![AWS EC2 instance running in the London region](aws-ec2.png)
+
