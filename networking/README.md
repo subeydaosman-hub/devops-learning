@@ -108,3 +108,9 @@ My website worked over HTTP, but the browser indicated that the connection was n
 
 **What I learned:** HTTP uses port 80 and does not encrypt traffic. HTTPS uses TLS encryption, which I had not configured for this assignment.
 
+## Screenshots
+
+### NGINX Welcome Page
+
+![NGINX welcome page showing my domain](nginx-welcome.png)
+
