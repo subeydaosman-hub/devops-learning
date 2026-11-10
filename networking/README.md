@@ -76,3 +76,35 @@ This confirmed that my domain, DNS record, AWS EC2 instance and NGINX web server
 
 **Note:** The EC2 public IPv4 address was temporary and may change when the instance is stopped and restarted.
 
+## Step 4: Challenges and Troubleshooting
+
+### 1. No Default VPC
+
+When launching my EC2 instance in the London region, AWS reported that no default VPC was available.
+
+**Solution:** I created a default VPC and subnet before launching my instance.
+
+**What I learned:** EC2 instances need a network environment, such as a VPC and subnet.
+
+### 2. EC2 Instance Connect Failed
+
+Initially, I couldn't connect to my instance using the browser-based EC2 Instance Connect terminal.
+
+**Solution:** I updated the security group's SSH inbound rule to allow the AWS-managed EC2 Instance Connect IPv4 prefix list for the London region.
+
+**What I learned:** Security groups control which network traffic can reach an EC2 instance. SSH uses port 22.
+
+### 3. NGINX Service Not Found
+
+I initially tried to start NGINX before installing it and received an error indicating that the service did not exist.
+
+**Solution:** I installed NGINX first, then enabled and started the service.
+
+**What I learned:** A service must be installed before systemd can manage it.
+
+### 4. HTTP vs HTTPS
+
+My website worked over HTTP, but the browser indicated that the connection was not secure.
+
+**What I learned:** HTTP uses port 80 and does not encrypt traffic. HTTPS uses TLS encryption, which I had not configured for this assignment.
+
