@@ -56,6 +56,3 @@ The service showed **active (running)**, confirming that NGINX was successfully 
 
 I tested the EC2 public IP address in my browser and saw the default NGINX welcome page.
 
-The service showed active (running), confirming that NGINX was successfully installed and running.
-
-I tested the EC2 public IP address in my browser and saw the default NGINX welcome page.
