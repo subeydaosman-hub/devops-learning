@@ -56,3 +56,23 @@ The service showed **active (running)**, confirming that NGINX was successfully 
 
 I tested the EC2 public IP address in my browser and saw the default NGINX welcome page.
 
+## Step 3: Configure Cloudflare DNS
+
+I purchased my personal domain, **subeyda.co.uk**, through Cloudflare.
+
+To connect my domain to my AWS EC2 instance, I created a DNS A record with the following settings:
+
+- **Type:** A
+- **Name:** @ (root domain)
+- **IPv4 Address:** 35.179.130.228
+- **Proxy Status:** DNS only
+- **TTL:** Auto
+
+An A record maps a domain name to an IPv4 address, allowing browsers to find the server hosting the website.
+
+I then visited **http://subeyda.co.uk** in my browser and successfully saw the default NGINX welcome page.
+
+This confirmed that my domain, DNS record, AWS EC2 instance and NGINX web server were working together.
+
+**Note:** The EC2 public IPv4 address was temporary and may change when the instance is stopped and restarted.
+
